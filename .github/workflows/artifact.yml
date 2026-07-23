@@ -31,6 +31,7 @@ jobs:
     - name: Read text
       run: |
        ls
+       mkdir artifacts
        cp hello.txt /artifacts/hello.text
        cat /artifacts/hello.txt
 
