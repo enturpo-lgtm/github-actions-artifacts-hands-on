@@ -17,7 +17,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: hello-artifact
-        path: ./artifacts/hello.txt
+        path: hello.txt
   download:
     needs: build
     runs-on: ubuntu-latest
@@ -31,5 +31,6 @@ jobs:
     - name: Read text
       run: |
        ls
-       cat ./artifacts/hello.txt
+       cp hello.txt /artifacts/hello.text
+       cat /artifacts/hello.txt
 
