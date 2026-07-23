@@ -28,5 +28,7 @@ jobs:
         name: hello-artifact
       
     - name: Read text
-      run: cat ./artifacts/hello.txt
+      run: |
+       ls
+       cat ./artifacts/hello.txt
 
